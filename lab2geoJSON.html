@@ -25,8 +25,12 @@ p {font-family: "Arial";
 		L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 			attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 		}).addTo(map);
-		L.marker ()
+		L.marker (mappoints)
 		.addTo(map);</script>
+		var coolLayer = L.geoJson().addTo(map);
+
+coolLayer.addData(mappoints);
+
 		
 		<script> var mappoints = {
 		“type”    : “FeatureCollection”,
@@ -40,7 +44,8 @@ p {font-family: "Arial";
     		"coordinates": [125.6, 10.1]
    			}
 			]
-			};</script>
+			};
+			</script>
 		
 		
 		
