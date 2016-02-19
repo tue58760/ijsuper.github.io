@@ -27,10 +27,12 @@ p {font-family: "Arial";
 			attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 		}).addTo(map);
 		var tourpoints = {
-    "type": "Feature","geometry": {
-        "type": "Point",
-        "coordinates": [100.904011,13.312476]
+    "type": "FeatureCollection","features": [
+    	{ "type": "Feature",geometry": {"type": "Point",
+        "coordinates": [100.904011,13.312476]}, Properties: {"name": Khao Sam Muk}
     }
+}
+]
 };
 		L.geoJson(tourpoints).addTo(map);
 		
