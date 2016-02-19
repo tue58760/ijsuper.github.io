@@ -33,9 +33,12 @@ p {font-family: "Arial";
 			]
 			};
 		
-		var map = L.map('map').setView([13.312476, 100.904011], 9);
+	var map = L.map('map').setView([39.9786671, -75.1600307], 13);
 		L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-			attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'})
+			attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+		}).addTo(map);
+		L.marker([L.geoJson().addTo(map);
+		pointlayer.addData(mappoints)])
 	
 		var pointlayer = L.geoJson().addTo(map);
 		pointlayer.addData(mappoints);
