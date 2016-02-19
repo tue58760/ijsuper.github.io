@@ -26,14 +26,8 @@ p {font-family: "Arial";
 		L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 			attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 		}).addTo(map);
-		var geojsonFeature = {
-    "type": "Feature",
-    "properties": {
-        "name": "Coors Field",
-        "amenity": "Baseball Stadium",
-        "popupContent": "This is where the Rockies play!"
-    },
-    "geometry": {
+		var tourpoints = {
+    "type": "Feature","geometry": {
         "type": "Point",
         "coordinates": [-104.99404, 39.75621]
     }
@@ -41,7 +35,7 @@ p {font-family: "Arial";
 		
 		
 		
-		L.geoJson(geojsonFeature).addTo(map);
+		L.geoJson(tourpoints).addTo(map);
 		
 
 	
