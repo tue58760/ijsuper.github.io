@@ -29,13 +29,14 @@ p {font-family: "Arial";
 		var tourpoints = {
     "type": "Feature","geometry": {
         "type": "Point",
-        "coordinates": [-104.99404, 39.75621]
+        "coordinates": [13.312476, 100.904011]
     }
 };
 		
 		
 		
-		L.geoJson(tourpoints).addTo(map);
+		L.geoJson(tourpoints).addTo(map)
+		.bindPopup('Alien Sighting. <br> Call Fox Mulder.');
 		
 
 	
