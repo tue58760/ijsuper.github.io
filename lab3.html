@@ -22,24 +22,9 @@
   	  attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 	}).addTo(map);
 	
-	L.geoJson(geojsonFeature).addTo(map);
+	L.geoJson(geojsonDictionary).addTo(map);
 	
-	var geojsonFeature = {
-    	"type": "Point",
-    	"properties": {
-        	"name": "Alexander Wilson Elementary School",
-        	"popupContent": "Elementary School"},
-    	"geometry": {
-    		"type": "Point",
-        	"coordinates": [39.94408, -75.208878]}};
-        		
-        
-
-
-
-
-
-	var myGeoJSON = {
+	var geojsonSictionary = {
 	‘type’ : ‘FeatureCollection’,
 	‘features’ : [
 		
