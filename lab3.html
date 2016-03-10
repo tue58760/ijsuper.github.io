@@ -1,0 +1,39 @@
+<html>
+<head>
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
+	<script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+
+<style>
+</style>
+</head>
+
+<body>
+	<h1>Tourism Geographies of the Eastern Seaboard of Thailand</h1>
+ 	<p>A comparison of Bangkok with emerging tourist markets in the Thai provinces of Chonburi and Rayong.</p>
+	
+	<div id='map' style="height:800px; width:1200px"></div>
+<script>
+	var myGeoJSON = {
+	‘type’ : ‘FeatureCollection’,
+	‘features’ : [
+		
+		{'type':'Feature', 
+'properties':{
+'name':'myPlace1',
+‘caption’:'this is the body text',
+‘img’:’<img src=”http://link/to/source.jpg”/>’},
+'geometry':{'type':'Point','coordinates':[-75.1474139, 39.9816609]}},
+
+{'type':'Feature',
+ 'properties':{
+'name':'myPlace2',
+‘caption’:'this is ALSO the body text'
+‘img’:’<img src=”http://link/to/source.jpg”/>’},
+'geometry':{'type':'Point','coordinates':[-75.1474439, 39.9716709]}}
+
+	]};
+
+</script>
+</body>
+</html>
+
