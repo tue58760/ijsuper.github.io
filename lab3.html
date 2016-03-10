@@ -23,30 +23,19 @@
 	}).addTo(map);
 	
 var geoJsonFeature = [
-    {"type": "FeatureCollection",
-    "features" :[
-    	{"type": "Feature",
-    		"properties": {
-        "Name": "Coors Field",
-        "amenity": "Baseball Stadium"
-     
-    },
-    "geometry": {
+	{"type": "FeatureCollection",
+  "features": [
+    {"type": "Feature",
+      "properties": {
+        "Name": "P.A.W.S",
+        "img": "<img src='http://www.packpeople.com/wp-content/uploads/2011/06/PAWS-logo-with-tagline.jpg' height=120 width=120/>"
+      },
+      "geometry": {
         "type": "Point",
-        "coordinates": [-104.99404, 39.75621]
-    	}
-    
-    },
-    
-    {"type": "Feature", 
-    "Properties": { "name": "fuckyou"},
-    "geometry": { "type": "Point", "coordinates": [0,0]}
-    ]
-}
+        "coordinates": [-75.143401,39.952172]
+      }
 
-];
-
-L.geoJson(geojsonFeature).addTo(map);
+L.geoJson(geoJsonFeature).addTo(map);
 
 
 </script>
