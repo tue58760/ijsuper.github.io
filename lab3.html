@@ -22,6 +22,7 @@
   	  attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 	}).addTo(map);
 	
+	L.geoJson(geojsonFeature).addTo(map);
 	
 	var geojsonFeature = {
     	"type": "Point",
@@ -32,7 +33,7 @@
     		"type": "Point",
         	"coordinates": [39.94408, -75.208878]}};
         		
-        L.geoJson(geojsonFeature).addTo(map);
+        
 
 
 
