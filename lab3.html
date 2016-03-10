@@ -34,9 +34,13 @@ var geojsonDictionary = {
     "geometry": {
         "type": "Point",
         "coordinates": [-104.99404, 39.75621]
-    	}]
+    	}
     
-    }
+    },
+    
+    {"type": "Feature", 
+    "Properties": { "name": "fuckyou"},
+    "geometry": { "type": "Point", "coordinates": [0,0]}]}
 };
 var geojsonlayer = L.geoJson(geojsonDictionary).addTo(map);
 
