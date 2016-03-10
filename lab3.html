@@ -22,12 +22,12 @@
   	  attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 	}).addTo(map);
 	
-var geojsonDictionary = {
-    "type": "FeatureCollection",
+var geoJsonFeature = [
+    {"type": "FeatureCollection",
     "features" :[
     	{"type": "Feature",
     		"properties": {
-        "name": "Coors Field",
+        "Name": "Coors Field",
         "amenity": "Baseball Stadium"
      
     },
@@ -40,9 +40,12 @@ var geojsonDictionary = {
     
     {"type": "Feature", 
     "Properties": { "name": "fuckyou"},
-    "geometry": { "type": "Point", "coordinates": [0,0]}]}
-};
-var geojsonlayer = L.geoJson(geojsonDictionary).addTo(map);
+    "geometry": { "type": "Point", "coordinates": [0,0]}
+    ]
+}
+
+];
+var geojsonlayer = L.geoJson(geojsonFeature).addTo(map);
 
 
 </script>
