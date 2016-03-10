@@ -23,8 +23,10 @@
 	}).addTo(map);
 	
 var geojsonDictionary = {
-    "type": "Feature",
-    "properties": {
+    "type": "FeatureCollection",
+    "features" :[
+    	{"type": "Feature",
+    		"properties": {
         "name": "Coors Field",
         "amenity": "Baseball Stadium",
         "popupContent": "This is where the Rockies play!"
@@ -32,6 +34,8 @@ var geojsonDictionary = {
     "geometry": {
         "type": "Point",
         "coordinates": [-104.99404, 39.75621]
+    	}]
+    
     }
 };
 var geojsonlayer = L.geoJson(geojsonDictionary).addTo(map);
