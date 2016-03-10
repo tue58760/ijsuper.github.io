@@ -22,20 +22,26 @@
   	  attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 	}).addTo(map);
 	
-var geojsonDictionary = {
-    "type": "Feature",
-    "properties": {
-        "name": "Coors Field",
-        "amenity": "Baseball Stadium",
-        "popupContent": "This is where the Rockies play!"
-    },
-    "geometry": {
-        "type": "Point",
-        "coordinates": [-104.99404, 39.75621]
-    }
-};
+var myGeoJSON = {
+	‘type’ : ‘FeatureCollection’,
+	‘features’ : [
+		{'type':'Feature', 
+'properties':{
+'name':'myPlace1',
+‘caption’:'this is the body text',
+‘img’:’<img src=”http://link/to/source.jpg”/>’},
+'geometry':{'type':'Point','coordinates':[-75.1474139, 39.9816609]}},
+{'type':'Feature',
+ 'properties':{
+'name':'myPlace2',
+‘caption’:'this is ALSO the body text'
+‘img’:’<img src=”http://link/to/source.jpg”/>’},
+'geometry':{'type':'Point','coordinates':[-75.1474439, 39.9716709]}}
 
-var geojsonlayer = L.geoJson(geojsonDictionary).addTo(map);
+	]};
+
+
+var geojsonlayer = L.geoJson(myGeoJSON).addTo(map);
 </script>
 </body>
 </html>
