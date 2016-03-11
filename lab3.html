@@ -11,17 +11,16 @@
      text-align: center;
      font-family: 'Kaushan Script', cursive;
      font-size:35px;
-     text-shadow: 0 0 3px #FF0000;}
+     text-shadow: 0 0 3px #FF0000;
+ 	
+ }
  
  h2 {font-family: 'Josefin Slab', serif;
      font-size: 22px;
      text-align: center;
      color: 	#dbba70;
- text-shadow: 0 0 3px #FF0000;}
- 
- div { height:85%; width:100%;
-    box-shadow: 10px 10px 5px grey;
-}
+ text-shadow: 0 0 3px #FF0000;
+ }
 </style>
 </head>
 
@@ -29,7 +28,7 @@
 	<h1>Tourism Geographies of the Eastern Seaboard of Thailand</h1>
  	<h2>A comparison of Bangkok with emerging tourist markets in the Thai provinces of Chonburi and Rayong.</h2>
 	
-	<div id='map'>
+	<div id='map' style="height:85%; width:100%">
 	</div>
 <script>
 		
@@ -45,7 +44,6 @@
   zoom: 9,
 })
 map.addLayer(Thunderforest_Landscape);
-
 var geoJsonFeature = [
 	{"type": "FeatureCollection",
   "features": [
@@ -62,11 +60,7 @@ var geoJsonFeature = [
   ]
 }
   ];
-
 L.geoJson(geoJsonFeature).addTo(map);
-
-
 </script>
 </body>
 </html>
-
