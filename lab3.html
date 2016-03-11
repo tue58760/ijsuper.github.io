@@ -44,6 +44,13 @@
   zoom: 9,
 })
 map.addLayer(Thunderforest_Landscape);
+
+function onEachFeature(feature, layer) {
+    if (feature.properties && feature.properties.Name) {
+        layer.bindPopup(feature.properties.Name + "<br>" + feature.properties.img + "<br>" + feature.properties.Address);
+    }
+}
+
 var geoJsonFeature = [
 	{"type": "FeatureCollection",
   "features": [
@@ -170,7 +177,7 @@ var geoJsonFeature = [
   ]
 }
   ];
-L.geoJson(geoJsonFeature).addTo(map);
+L.geoJson(geoJsonFeature, {onEachFeature: onEachFeature}).addTo(map);
 </script>
 </body>
 </html>
