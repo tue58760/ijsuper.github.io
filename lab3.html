@@ -56,7 +56,7 @@ map.addLayer(Thunderforest_Landscape);
 
 function onEachFeature(feature, layer) {
     if (feature.properties && feature.properties.Name) {
-        layer.bindPopup(feature.properties.Name + "<br>" + feature.properties.img + "<br>" + feature.properties.Address);
+        layer.bindPopup(feature.properties.Name + "<br>" + feature.properties.img + "<br>" + feature.properties.Caption);
     }
 }
 
