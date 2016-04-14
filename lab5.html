@@ -1,1 +1,23 @@
-lol
+
+<html>
+<head>  
+<title>build your own</title>  
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>  
+<link rel="stylesheet" href="Leaflet.Instagram/dist/Leaflet.Instagram.css"/>  
+
+<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script> 
+
+<style>   
+
+#map{ height: 100% }  
+
+</style>
+</head>
+<body> <div id="map"></div>
+ <script src="https://gus8068Spr16.github.io/reqwest.min.js"></script> 
+ <script src="https://gus8068Spr16.github.io/Leaflet.Instagram/dist/Leaflet.Instagram.js"></script> 
+ <script> var map = L.map('map').setView([40.0237, -75.1723], 17); var at = '256164975.c9600e9.7a9aeb07284e4220bdddeaddcbedee38'; var url = "https://api.instagram.com/v1/media/search?lat=40.0237&lng=-75.1723&access_token="+at;
+ 
+ L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {   attribution: 'Map data Â© <a href="http://openstreetmap.org">OpenStreetMap</a>, Data by <a href="http://mass.gov/mgis">MassGIS</a>',   maxZoom: 19,   minZoom: 7 }).addTo(map); L.instagram(url).addTo(map); </script>
+ </body>
+ </html>
