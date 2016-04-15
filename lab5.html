@@ -8,8 +8,6 @@
 <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script> 
 
 <style>   
-
-#map{ height: 85%; width:100%; border:2.5px solid #000000;" }  
 body {background-color: green;}
 
 </style>
@@ -17,7 +15,8 @@ body {background-color: green;}
 <body> 
 <h1>Insagram Photos of the Lansdowne Neighborhood of Cape Town, South Africa </h1>
 
-<div id="map"></div>
+<div id='map' style="height:85%; width:100%; border:2.5px solid #000000;">
+	</div>
  <script src="https://gus8068Spr16.github.io/reqwest.min.js"></script> 
  <script src="https://gus8068Spr16.github.io/Leaflet.Instagram/dist/Leaflet.Instagram.js"></script> 
  <script> var map = L.map('map').setView([-33.989360,18.501971], 16); var at = '256164975.c9600e9.7a9aeb07284e4220bdddeaddcbedee38'; var url = "https://api.instagram.com/v1/media/search?lat=-33.989360&lng=18.501971&access_token="+at;
