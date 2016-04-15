@@ -8,12 +8,12 @@
 <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script> 
 
 <style>   
-div.body {
-     margin-top: 100%;
-    margin-bottom: 100%;
-    margin-right: 150%;
-    margin-left: 80%;
-}
+div.map /* 1 */
+  {
+   margin: 0;
+   position: absolute;               /* 2 */
+   top: 50%;                         /* 3 */
+   transform: translate(0, -50%) }   /* 4 */
 body {
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Flag_of_South_Africa.svg/2000px-Flag_of_South_Africa.svg.png");
 }
