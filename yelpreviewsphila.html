@@ -17,6 +17,7 @@ body {
   text-align: center;
   
 }
+
 h1 {color: 	white;
      text-align: center;
      font-family: 'Lato', sans-serif;
@@ -37,11 +38,26 @@ h1 {color: 	white;
      text-align: center;
      text-shadow: 0 0 3px #black;
 }
+
+div.transbox {
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+}
+
 </style>
 </head>
 <body> 
 
-<div>
+<div class=transbox>
 <h1>Restaurant Reviews and Demographics in Philadelphia</h1>
 <h2> A WebGIS comparison of Yelp and Trip Advisor rated restaurants in select Philadlephia neighborhoods. </h2>
 </div>
